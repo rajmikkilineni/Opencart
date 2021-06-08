@@ -63,7 +63,7 @@ public class BaseClass {
 	}
 	
 	
-	@AfterClass
+	@AfterClass(groups= {"master","sanity","regression"})
 	public void teardown()
 	{
 		driver.quit();
